@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parla Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="chatColor">
+    <header class="chatHeader">
+        <button class="back-button" onclick="window.history.back();">indietro</button>
+        <h1 class="chatHeader"><i>Parla.chat</i></h1>
+    </header>
+    <div id="chat-container">
+        <div id="output">
+            <!-- Chat messages will be added here dynamically -->
+        </div>
+    </div>
+    <div class="message-bar">
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Say something...">
+            <button id="sendButton" class="button-style">Inviare</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+
+</html>
